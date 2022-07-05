@@ -146,7 +146,7 @@
 	if(hour < 12){
 		myTimeofDay = myDate.getHours() + ":" + mins + " AM";
 	}else{
-		myTimeofDay = myDate.getHours() + ":" + mins + " PM";
+		myTimeofDay = (myDate.getHours() - 12) + ":" + mins + " PM";
 	}
 
 	if(myHour >= 5 && myHour < 12){//morning
