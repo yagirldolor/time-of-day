@@ -121,6 +121,7 @@
 	
 	//declare the variable myDate
 	let myDate = new Date();
+
 	//allows us to manage the data as 1 variable
 	let myCopyright = myDate.getFullYear();
 
@@ -137,13 +138,12 @@
 	let myPic = "";
 
 	let dayOfWeekName = new Date().toLocaleString('default', {weekday: 'long'});
-
 	
 	let mins = ('0'+myDate.getMinutes()).slice(-2);
 	let hour = myDate.getHours();
 	let myTimeofDay = "";
 
-	if(hour <= 12){
+	if(hour < 12){
 		myTimeofDay = myDate.getHours() + ":" + mins + " AM";
 	}else{
 		myTimeofDay = myDate.getHours() + ":" + mins + " PM";
